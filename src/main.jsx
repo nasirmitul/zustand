@@ -6,12 +6,22 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Cart from './components/Cart';
+import Profile from './components/Profile';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+  },
+  {
+    path: "/cart",
+    element: <Cart></Cart>
+  },
+  {
+    path: "/profile",
+    element: <Profile></Profile>
   },
 ]);
 

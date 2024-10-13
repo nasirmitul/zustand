@@ -77,6 +77,7 @@ img {
   border-radius: 5px;
   background: var(--dark-5);
   cursor: pointer;
+  position: relative;
 }
 
 .icon-design .icon {
@@ -174,4 +175,30 @@ img {
   cursor: pointer;
   font-size: 30px;
   font-weight: 100;
+}
+
+.profile-page {
+  position: absolute;
+  top: 55px;
+  background: var(--white-100);
+  border: 1px solid var(--dark-10);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -10px var(--dark-30);
+  height: auto;
+  width: fit-content;
+  left: -2px;
+}
+
+.cart-page {
+  position: absolute;
+  top: 55px;
+  background: var(--white-100);
+  border: 1px solid var(--dark-10);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 10px -10px var(--dark-30);
+  height: auto;
+  width: fit-content;
+  right: -2px;
 }
