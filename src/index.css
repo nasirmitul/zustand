@@ -194,6 +194,8 @@ img {
   width: fit-content;
   left: -2px;
   width: 450px;
+  max-height: 700px;
+  overflow-y: auto;
 }
 
 .profile-page .profile-info .message-title {
@@ -264,6 +266,7 @@ img {
   border: 1px solid var(--dark-10);
   margin-bottom: 10px;
   border-radius: 5px;
+  position: relative;
 }
 .cart-page .cart-info .product .product-name {
   font-size: 20px;
@@ -278,4 +281,39 @@ img {
 
 .cart-page .cart-info .product .product-item span {
   color: var(--dark-100);
+}
+
+.cart-page .cart-info .product .remove-from-cart {
+  height: 35px;
+  width: 35px;
+  border: 1px solid var(--danger);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  background: var(--dark-5);
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 100;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.cart-page .cart-info .product .remove-from-cart .icon{
+  height: 15px;
+  width: 15px;
+  color: var(--danger);
+}
+
+.cart-page .clear-cart{
+  background: var(--danger);
+  color: var(--white-100);
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 35px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
