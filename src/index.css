@@ -179,7 +179,7 @@ img {
 
 .profile-page {
   position: absolute;
-  top: 55px;
+  top: 100px;
   background: var(--white-100);
   border: 1px solid var(--dark-10);
   padding: 20px;
@@ -188,11 +188,59 @@ img {
   height: auto;
   width: fit-content;
   left: -2px;
+  width: 450px;
+}
+
+.profile-page .profile-info .message-title {
+  color: var(--primary-100);
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.profile-page .profile-info .input-data {
+  margin-bottom: 35px;
+}
+
+.profile-page .profile-info .input-data form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-page .profile-info .input-data form input {
+  padding: 10px;
+  font-size: 16px;
+  color: var(--primary-100);
+  border: 1px solid var(--dark-60);
+  border-radius: 5px;
+}
+
+.profile-page .profile-info .input-data form button {
+  background: var(--primary-100);
+  color: var(--white-100);
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 35px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.profile-page .profile-info .show-data .data {
+  margin-top: 8px;
+  color: var(--primary-100);
+  font-weight: 500;
+}
+
+.profile-page .profile-info .show-data .data span {
+  color: var(--dark-100);
+  margin-left: 5px;
 }
 
 .cart-page {
   position: absolute;
-  top: 55px;
+  top: 100px;
   background: var(--white-100);
   border: 1px solid var(--dark-10);
   padding: 20px;
@@ -201,4 +249,5 @@ img {
   height: auto;
   width: fit-content;
   right: -2px;
+  width: 450px;
 }

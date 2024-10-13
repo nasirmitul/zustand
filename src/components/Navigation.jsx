@@ -11,17 +11,17 @@ export default function Navigation() {
       <div className="page-navigation">
         <div className="icon-design profile" onClick={() => isProfileActive(!profileActive)} >
           <LuUser2 className='icon' />
-          {
-            profileActive && <Profile></Profile>
-          }
         </div>
+        {
+          profileActive && <Profile></Profile>
+        }
         <p className='navigation-message'>You have added <span>00</span> items in cart</p>
         <div className="icon-design cart" onClick={() => isCartActive(!cartActive)}>
           <LuShoppingCart className='icon' />
-          {
-            cartActive && <Cart></Cart>
-          }
         </div>
+        {
+          cartActive && <Cart></Cart>
+        }
       </div>
     </div>
   )
