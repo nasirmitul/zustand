@@ -1,0 +1,145 @@
+:root {
+  --primary-100: #f5b041;
+  --primary-90: rgba(245, 176, 65, 0.9);
+  --primary-20: rgba(245, 176, 65, 0.2);
+  --primary-5: rgba(245, 176, 65, 0.05);
+
+  --dark-100: #313131;
+  --dark-90: rgba(49, 49, 49, 0.9);
+  --dark-80: rgba(49, 49, 49, 0.8);
+  --dark-70: rgba(49, 49, 49, 0.7);
+  --dark-60: rgba(49, 49, 49, 0.6);
+  --dark-30: rgba(49, 49, 49, 0.3);
+  --dark-20: rgba(49, 49, 49, 0.2);
+  --dark-10: rgba(49, 49, 49, 0.1);
+  --dark-5: rgba(49, 49, 49, 0.05);
+  --dark-0: rgba(49, 49, 49, 0);
+
+  --team-border: #d6d6d6;
+
+  --white-100: #ffffff;
+  --white-80: rgba(255, 255, 255, 0.8);
+  --white-20: rgba(255, 255, 255, 0.2);
+
+  --bg: #f9fafc;
+  --secondary-bg: #fff7fb;
+
+  --success-95: rgba(34, 153, 84, 0.95);
+  --danger: #c52c1b;
+
+  --font-size-es: 14px;
+  --font-size-s: 16px;
+  --font-size-m: 18px;
+  --font-size-l: 24px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 48px;
+  --font-size-xxxl: 64px;
+  --font-size-4xl: 82px;
+  --font-size-5xl: 96px;
+  --font-size-6xl: 128px;
+
+  --line-height-s: 16px;
+  --line-height-m: 20px;
+  --line-height-l: 24px;
+  --line-height-xl: 48px;
+  --line-height-xxl: 64px;
+  --line-height-xxxl: 82px;
+  --line-height-4xl: 96px;
+
+  --gap-5: 5px;
+  --gap-10: 10px;
+  --gap-15: 15px;
+  --gap-20: 20px;
+  --gap-30: 30px;
+  --gap-45: 45px;
+  --gap-60: 60px;
+  --gap-80: 80px;
+  --gap-100: 100px;
+  --gap-120: 120px;
+  --gap-150: 150px;
+
+  --p-5: 5px;
+  --p-10: 10px;
+  --p-15: 15px;
+  --p-20: 20px;
+  --p-30: 30px;
+  --p-45: 45px;
+  --p-60: 60px;
+  --p-80: 80px;
+  --p-100: 100px;
+  --p-120: 120px;
+  --p-150: 150px;
+
+  --m-5: 5px;
+  --m-10: 10px;
+  --m-15: 15px;
+  --m-20: 20px;
+  --m-30: 30px;
+  --m-45: 45px;
+  --m-60: 60px;
+  --m-80: 80px;
+  --m-100: 100px;
+  --m-120: 120px;
+  --m-150: 150px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body,
+input,
+button {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--bg);
+  font-family: "Bricolage Grotesque", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: calc(100% - 400px);
+  margin: auto;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.overflow-h {
+  overflow: hidden;
+}
+
+/* === Breakpoints === */
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 576px) {
+}
+
+@media only screen and (max-width: 480px) {
+}
