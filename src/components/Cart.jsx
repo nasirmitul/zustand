@@ -1,26 +1,21 @@
 import React from 'react'
+import { products } from '../../public/products';
 
 export default function Cart() {
+  const allProducts = products;
   return (
     <div className='cart-page'>
-      <div className="profile-info">
-        <div className="input-data">
-          <p className='message-title'>Enter Your Info Here -</p>
-          <form action="">
-            <input type="text" placeholder='Name' />
-            <input type="text" placeholder='Username' />
-            <input type="text" placeholder='Email' />
-            <input type="password" placeholder='Password' />
-            <button>submit</button>
-          </form>
-        </div>
-        <div className="show-data">
-          <p className='message-title'>Your Provided info are -</p>
-          <p>Name: <span>Abu Al Nasir Mitul</span></p>
-          <p>UserName: <span>Mitul</span></p>
-          <p>Email: <span>Mitul</span></p>
-          <p>Password: <span>Mitul</span></p>
-        </div>
+      <div className="cart-info">
+        {
+          allProducts.map(product =>
+            <div className='product' key={product?.id}>
+              <p className="product-name">{product?.name}</p>
+              <p className="total-price product-item">Price: <span>00</span></p>
+              <p className='item-count product-item'>Total Added: <span>00</span></p>
+              <p className='total-cost product-item'>Total Cost: <span>00</span></p>
+            </div>
+          )
+        }
       </div>
     </div>
   )
