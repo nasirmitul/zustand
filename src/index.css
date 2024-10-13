@@ -1,8 +1,5 @@
 :root {
-  --primary-100: #f5b041;
-  --primary-90: rgba(245, 176, 65, 0.9);
-  --primary-20: rgba(245, 176, 65, 0.2);
-  --primary-5: rgba(245, 176, 65, 0.05);
+  --primary-100: #e67e22;
 
   --dark-100: #313131;
   --dark-90: rgba(49, 49, 49, 0.9);
@@ -15,72 +12,14 @@
   --dark-5: rgba(49, 49, 49, 0.05);
   --dark-0: rgba(49, 49, 49, 0);
 
-  --team-border: #d6d6d6;
-
   --white-100: #ffffff;
   --white-80: rgba(255, 255, 255, 0.8);
   --white-20: rgba(255, 255, 255, 0.2);
 
-  --bg: #f9fafc;
-  --secondary-bg: #fff7fb;
-
   --success-95: rgba(34, 153, 84, 0.95);
   --danger: #c52c1b;
 
-  --font-size-es: 14px;
-  --font-size-s: 16px;
-  --font-size-m: 18px;
-  --font-size-l: 24px;
-  --font-size-xl: 32px;
-  --font-size-xxl: 48px;
-  --font-size-xxxl: 64px;
-  --font-size-4xl: 82px;
-  --font-size-5xl: 96px;
-  --font-size-6xl: 128px;
-
-  --line-height-s: 16px;
-  --line-height-m: 20px;
-  --line-height-l: 24px;
-  --line-height-xl: 48px;
-  --line-height-xxl: 64px;
-  --line-height-xxxl: 82px;
-  --line-height-4xl: 96px;
-
-  --gap-5: 5px;
-  --gap-10: 10px;
-  --gap-15: 15px;
-  --gap-20: 20px;
-  --gap-30: 30px;
-  --gap-45: 45px;
-  --gap-60: 60px;
-  --gap-80: 80px;
-  --gap-100: 100px;
-  --gap-120: 120px;
-  --gap-150: 150px;
-
-  --p-5: 5px;
-  --p-10: 10px;
-  --p-15: 15px;
-  --p-20: 20px;
-  --p-30: 30px;
-  --p-45: 45px;
-  --p-60: 60px;
-  --p-80: 80px;
-  --p-100: 100px;
-  --p-120: 120px;
-  --p-150: 150px;
-
-  --m-5: 5px;
-  --m-10: 10px;
-  --m-15: 15px;
-  --m-20: 20px;
-  --m-30: 30px;
-  --m-45: 45px;
-  --m-60: 60px;
-  --m-80: 80px;
-  --m-100: 100px;
-  --m-120: 120px;
-  --m-150: 150px;
+  --container-width: calc(100% - 1000px);
 }
 
 *,
@@ -103,7 +42,7 @@ button {
 }
 
 .container {
-  width: calc(100% - 400px);
+  width: var(--container-width);
   margin: auto;
   position: relative;
 }
@@ -128,18 +67,111 @@ img {
   overflow: hidden;
 }
 
-/* === Breakpoints === */
-@media only screen and (max-width: 1200px) {
+.icon-design {
+  height: 45px;
+  width: 45px;
+  border: 1px solid var(--dark-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: var(--dark-5);
+  cursor: pointer;
 }
 
-@media only screen and (max-width: 992px) {
+.icon-design .icon {
+  height: 20px;
+  width: 20px;
+  color: var(--dark-100);
 }
 
-@media only screen and (max-width: 768px) {
+.page-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  background: #ffffff;
+  position: fixed;
+  width: var(--container-width);
 }
 
-@media only screen and (max-width: 576px) {
+.navigation-message {
+  color: var(--dark-100);
+  font-size: 18px;
 }
 
-@media only screen and (max-width: 480px) {
+.navigation-message span {
+  color: var(--primary-100);
+  font-weight: 700;
+}
+
+.all-product {
+  padding-top: 100px;
+}
+
+.all-product .product {
+  border: 1px solid var(--dark-10);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.all-product .product .product-name {
+  font-size: 24px;
+  color: var(--primary-100);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.all-product .product .price-category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.all-product .product .price-category p span {
+  color: var(--primary-100);
+  font-weight: 500;
+}
+
+.all-product .product .description {
+  color: var(--dark-100);
+  margin-bottom: 25px;
+}
+
+.all-product .product button {
+  background: var(--primary-100);
+  color: var(--white-100);
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 14px 35px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.all-product .product button.atc {
+  margin-bottom: 10px;
+}
+
+.all-product .product .increment-decrement {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.all-product .product .increment-decrement .increment,
+.all-product .product .increment-decrement .decrement {
+  height: 45px;
+  width: 45px;
+  border: 1px solid var(--dark-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: var(--dark-5);
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 100;
 }

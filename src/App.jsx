@@ -1,8 +1,15 @@
-function App() {
+import Navigation from "./components/navigation"
+import Products from "./components/Products"
 
+function App() {
   return (
     <>
-      <h1>Hello Zustand</h1>
+      <div className="container">
+        <div className="navigation">
+          <Navigation></Navigation>
+          <Products></Products>
+        </div>
+      </div>
     </>
   )
 }
